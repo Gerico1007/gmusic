@@ -1,0 +1,61 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# ♠️🌿🎸🧵 G.Music Assembly — JamAI Command Wrapper
+# Main entry point for musical session management
+
+GMUSIC_HOME="${HOME}/workspace/gmusic"
+SCRIPTS_DIR="${GMUSIC_HOME}/scripts"
+
+case "$1" in
+    compile)
+        shift
+        "${SCRIPTS_DIR}/jamai_compile.sh" "$@"
+        ;;
+    mark)
+        # Manual milestone marker
+        DESCRIPTION="${2:-Manual milestone}"
+        SESSION_FILE="${GMUSIC_HOME}/sessionABC/$(date +%Y%m%d).abc"
+        TIMESTAMP=$(date +%H:%M:%S)
+
+        # Initialize if needed
+        if [[ ! -f "$SESSION_FILE" ]]; then
+            cat > "$SESSION_FILE" << EOF
+X:1
+T:Terminal Session $(date +%Y-%m-%d)
+C:JamAI (G.Music Assembly - Auto-generated)
+M:4/4
+L:1/8
+K:G
+% ♠️🌿🎸🧵 Assembly Mode — Terminal-to-Music Session Log
+
+EOF
+        fi
+
+        # Add marked milestone
+        cat >> "$SESSION_FILE" << EOF
+% [$TIMESTAMP] MANUAL MARK: $DESCRIPTION
+% Milestone marker (Key: D, Meter: 4/4)
+D4 F4 A4 d4 |
+
+EOF
+        echo "♠️🌿🎸🧵 Milestone marked: $DESCRIPTION"
+        ;;
+    *)
+        cat << EOF
+♠️🌿🎸🧵 JamAI — Musical Session Manager
+
+Usage: jamai <command> [options]
+
+Commands:
+  compile [date]        Compile session fragments into refined score
+  mark [description]    Manually mark a milestone in the current session
+
+Examples:
+  jamai compile                    # Compile today's session
+  jamai compile 20251012          # Compile specific date
+  jamai mark "Feature complete"   # Mark a milestone
+
+See also:
+  jamai compile --help            # More compilation options
+EOF
+        ;;
+esac
