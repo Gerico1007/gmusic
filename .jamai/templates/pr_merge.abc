@@ -1,0 +1,55 @@
+X:1
+T:PR Merge Fanfare Template
+C:JamAI (G.Music Assembly)
+M:4/4
+L:1/8
+Q:"Maestoso" 1/4=80
+K:Gmaj
+% === PR MERGE FANFARE TEMPLATE ===
+% Use this template when a PR is successfully merged
+%
+% CUSTOMIZATION GUIDE:
+% 1. Update title with PR number and feature name
+% 2. Add comment about what was merged
+% 3. Adjust dynamics based on PR significance
+% 4. Can extend if particularly important merge
+
+% ═══════════════════════════════════════════════════════════════
+% OPENING: PR Created (Building anticipation)
+% Brass, stately, mf
+% ═══════════════════════════════════════════════════════════════
+V:1 clef=treble name="PR Created"
+%%MIDI program 61
+"G" G>B d>g | "C" e2 c2 z4 |
+% [ADD COMMENT: What PR was created? Issue number?]
+
+% ═══════════════════════════════════════════════════════════════
+% MIDDLE: Review & Approval (Ascending confidence)
+% Building toward merge
+% ═══════════════════════════════════════════════════════════════
+"G" G>A B>c | "D" d>e ^f>g | "G" g4 z4 |
+% [ADD COMMENT: Review process, approvals received?]
+
+% ═══════════════════════════════════════════════════════════════
+% CLIMAX: PR MERGED! (Triumphant proclamation)
+% Brass fanfare, ff, full chords
+% ═══════════════════════════════════════════════════════════════
+"ff"
+"G" [G2B2d2g2] [G2B2d2g2] | "D7" [A2^c2e2a2] [A2^c2e2a2] |
+"G" [G4B4d4g4]"fermata" z4 |
+% [ADD COMMENT: What branch? Merged to main/develop?]
+
+% ═══════════════════════════════════════════════════════════════
+% CLOSING: Satisfaction (Peaceful resolution)
+% Descending, calming, pp
+% ═══════════════════════════════════════════════════════════════
+"mp"
+"G" g2d2 B2G2 | "C" c2G2 E2C2 | "G" G,2D2 G2B,2 | "pp" G,6 z2 |]
+% [ADD COMMENT: What's next after merge?]
+
+% ═══════════════════════════════════════════════════════════════
+% VARIATIONS:
+% - For major features, extend climax section with more fanfare
+% - For hotfixes, keep shorter and more urgent (faster tempo)
+% - For first PR, add extra celebration!
+% ═══════════════════════════════════════════════════════════════

@@ -1,0 +1,67 @@
+X:1
+T:Bug Discovery Template
+C:JamAI (G.Music Assembly)
+M:4/4
+L:1/8
+Q:1/4=88
+K:Amin
+% === BUG DISCOVERY JOURNEY TEMPLATE ===
+% Use this template when a bug is discovered and needs to be fixed
+%
+% CUSTOMIZATION GUIDE:
+% 1. Update title with specific bug/issue name
+% 2. Adjust tempo based on severity (slower = more serious)
+% 3. Add specific technical comments in each section
+% 4. Modify key based on emotion (A minor, E minor, D minor)
+
+% ═══════════════════════════════════════════════════════════════
+% PART A: CONFIDENT IMPLEMENTATION (Before bug discovered)
+% A minor, Andante, mf - "It's working!"
+% ═══════════════════════════════════════════════════════════════
+V:1 clef=treble name="Implementation"
+"Am"A2c2 e2a2 | "F"f4 c4 | "G"g2d2 B2G2 | "Am"A6 z2 |
+% [ADD COMMENT: What feature was being implemented?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART B: THE REALIZATION (Wrong note! Dissonance!)
+% Diminished chords, chromatic - confusion and surprise
+% ═══════════════════════════════════════════════════════════════
+V:1 name="Discovery"
+"Am"A2"F#dim"^F2 "Bdim"B2"E7"^G2 | "Am"a2"Dm"d2 "Bm7b5"^f2"E7"e2 |
+"Am"c'2"Ab7"_b2 "G7"g2"Gbdim"_g2 | "Fmaj7"f8 |
+% [ADD COMMENT: What bug was discovered? What went wrong?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART C: INVESTIGATION (Searching for the cause)
+% Chromatic searching, ascending patterns
+% ═══════════════════════════════════════════════════════════════
+V:1 name="Investigation"
+[Q:1/4=100]"mf"
+"Am"A,2C2 E2A2 | "Dm"D2F2 A2d2 | "E7"E2^G2 B2e2 | "Am"A,6 z2 |
+% [ADD COMMENT: How did you investigate? What tools/methods?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART D: BREAKTHROUGH (Solution discovered!)
+% Modulation to C major, ascending melody, ff
+% ═══════════════════════════════════════════════════════════════
+[K:Cmaj][Q:1/4=120]"ff"
+"C"c2e2 g2c'2 | "Am"a2e2 c2A2 | "F"f2a2 c'2f'2 | "G"g4 d4 |
+"C"e2g2 c'2e'2 | "Am"a2e2 ^c2A2 | "Dm7"d2f2 a2d'2 | "G7"g6 z2 |
+% [ADD COMMENT: What was the solution? How was bug fixed?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART E: RESOLUTION (Tests passing, bug fixed)
+% C major, perfect cadence, peaceful
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=90]"mf"
+"C"c'2g2 e2c2 | "Am"a2e2 c2A2 | "F"f2c2 A2F2 | "G"G2D2 B,2G,2 |
+"C"C2G,2 C2E,2 | C,6 z2 |
+% [ADD COMMENT: How was fix verified? What tests confirmed?]
+
+% ═══════════════════════════════════════════════════════════════
+% USAGE INSTRUCTIONS:
+% 1. Replace [ADD COMMENT] sections with actual technical details
+% 2. Adjust tempos based on your experience
+% 3. Can add lyrics with "w:" lines to describe specific moments
+% 4. Consider adding Jerry's joy section if he was particularly happy!
+% ═══════════════════════════════════════════════════════════════

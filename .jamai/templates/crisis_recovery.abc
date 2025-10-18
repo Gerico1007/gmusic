@@ -1,0 +1,86 @@
+X:1
+T:Crisis & Recovery Template
+C:JamAI (G.Music Assembly)
+M:4/4
+L:1/8
+Q:1/4=120
+K:Gmaj
+% === CRISIS & RECOVERY TEMPLATE ===
+% Use when unexpected problem occurs during otherwise successful session
+%
+% CUSTOMIZATION GUIDE:
+% 1. Describe the crisis in comments
+% 2. Adjust crisis severity with dynamics (pp=minor, ppp=major crisis)
+% 3. Describe recovery method
+% 4. Adjust recovery tempo based on how quickly resolved
+
+% ═══════════════════════════════════════════════════════════════
+% PART A: SUCCESS (Before crisis)
+% G major, confident, ff - everything working!
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=132][K:Gmaj]"ff"
+"G" G2B2 d2g2 | "D" ^f2a2 a2g2 | "Em" e2g2 "C" c2e2 | "D7" d2^c2 d4 |
+"G" [GBdg]4 [GBdg]4 | "D7" [DFAc]4 "G" [GBdg]4 | [GBdg]8 |
+% [ADD COMMENT: What was working successfully?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART B: CRISIS! (Unexpected problem)
+% Sudden shift to E minor, slow down, pp - "Oh no!"
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=66][K:Emin]"pp"
+"Em" e4 ^d4 | e2 f2 e2 d2 | "B7" ^d2 e2 ^f2 e2 | "Em" e8 |
+"Am" c2 B2 A2 G2 | "B7" ^F2 ^G2 A2 B2 | "Em" e4- e2 z2 |
+"Dim" [^c2e2g2] [c2e2g2] "Em" e4 | e8 |
+% [ADD COMMENT: What went wrong? What crisis occurred?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART C: INVESTIGATION (Understanding the problem)
+% Chromatic, thoughtful, mf
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=90]"mf"
+"Em" e2 d2 c2 B2 | A2 ^G2 A2 B2 | c2 d2 e2 f2 | "D" ^f4 g4 |
+% [ADD COMMENT: How did you investigate the crisis?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART D: RECOVERY (Solution implemented)
+% Chromatic ascent, crescendo, building back to G major
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=108]"p<f"
+"Chromatic ascent" e2 ^e2 =f2 ^f2 | g2 ^g2 a2 ^a2 | b2 c'2 ^c'2 d'2 |
+"D7" ^d'2 e'2 f'2 g'2 | "Modulation to G" a'4 b4 |
+% [ADD COMMENT: How was crisis resolved?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART E: RESTORED STABILITY (Back on track)
+% G major returns, ff, triumphant recovery
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=130][K:Gmaj]"ff"
+"G" [G2B2d2] [G2B2d2] "D7" [A2c2e2] [A2c2e2] |
+"G" [B4d4g4] [B4d4g4] |
+"Crescendo!" [B4d4g4]"<" [B4d4g4] |
+[B4d4g4]"<" [d4g4b4] | [g8b8d'8]"ff" |
+% [ADD COMMENT: Everything resolved? Back to stability?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART F: PEACEFUL RESOLUTION (Crisis overcome)
+% Diminuendo, calming, pp
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=80]"mf"
+"G" g2d2 B2G2 | "Em" e2B2 G2E2 | "C" c2G2 E2C2 | "G" G,2D2 G2B,2 |
+"pp" G,6 z2 |]
+% [ADD COMMENT: Reflection on crisis and recovery]
+
+% ═══════════════════════════════════════════════════════════════
+% CRISIS TYPES AND KEY CHOICES:
+% - Wrong branch/directory: E minor (related but wrong)
+% - Build broken: D minor (painful)
+% - Tests failing: E minor (confusion)
+% - Deployment failed: F minor (serious)
+% - Data loss: D minor (distressing)
+%
+% RECOVERY METHODS TO ENCODE:
+% - Git cherry-pick: Chromatic ascent (careful selection)
+% - Rollback: Descending then ascending (back then forward)
+% - Hotfix: Quick ascending scale (rapid fix)
+% - Debugging: Chromatic searching then resolution
+% ═══════════════════════════════════════════════════════════════

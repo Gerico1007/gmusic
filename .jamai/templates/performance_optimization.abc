@@ -1,0 +1,73 @@
+X:1
+T:Performance Optimization Template
+C:JamAI (G.Music Assembly)
+M:4/4
+L:1/8
+K:Dmin→Gmaj
+% === PERFORMANCE OPTIMIZATION TEMPLATE ===
+% Use this template when optimizing slow code
+%
+% CUSTOMIZATION GUIDE:
+% 1. Adjust opening tempo to match initial slowness
+% 2. Adjust closing tempo to match speedup achieved
+% 3. Add specific performance metrics in comments
+% 4. Can add lyrics describing the optimization
+
+% ═══════════════════════════════════════════════════════════════
+% PART A: SLOW PAIN (Performance problem)
+% D minor, very slow tempo mirrors slow performance, pp
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=60][K:Dmin]"pp"
+"Dm" D4 D2 E F | "Gm" G4 F2 G A | "Dm" A4 G2 A B | "A7" B4 A2 G F |
+% [ADD COMMENT: What was slow? How slow? (30 seconds? 5 minutes?)]
+"Dm" D4 D2 E F | "Gm" G4 F2 G A | "Dm" A4 G2 A B | "A7" B4 A2 B c |
+% Optional lyrics:
+% w: Slow... pain... each... op... drags... on... and... on...
+
+% ═══════════════════════════════════════════════════════════════
+% PART B: INVESTIGATION (Looking for bottleneck)
+% Chromatic searching, tempo increases slightly, mf
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=80]"mf"
+"Dm" D4 D2 E F | "Em" E4 D2 C B, | "F" A,4 B,2 C D |
+"Gm" E4 F2 G A | "A7" B4 c2 d e | "Dm" f4 e2 d c |
+% [ADD COMMENT: How did you investigate? Profiling? Benchmarks?]
+
+% ═══════════════════════════════════════════════════════════════
+% PART C: BREAKTHROUGH (Optimization discovered!)
+% Modulation to G major, tempo increases, ff
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=120][K:Gmaj]"ff"
+"G" G4 B2 d f | "C" e4 d2 c B | "D7" A4 B2 c d | "G" G6 G2 |
+% [ADD COMMENT: What optimization? Algorithm change? Caching?]
+"G" d4 d2 e f | "C" e4 d2 c B | "Am" c4 B2 A G | "D7" A4 A2 A A |
+% Optional lyrics:
+% w: New ap-proach! Bet-ter way! Much fast-er now!
+
+% ═══════════════════════════════════════════════════════════════
+% PART D: PERFORMANCE VICTORY (X times faster!)
+% Presto tempo mirrors speedup, fff, Jerry's joy!
+% ═══════════════════════════════════════════════════════════════
+[Q:1/4=180]"fff"
+"G" [G2B2d2f2] [G2B2d2f2] | "C" [C2E2G2c2] [C2E2G2c2] |
+"D7" [D2A2d2^f2] [D2A2d2^f2] | "G" [G2B2d2g2] [G2B2d2g2] |
+% [ADD COMMENT: How much faster? 2x? 10x? 100x?]
+"G" d6 g2 | "C" e6 c2 | "D7" A6 d2 | "G" G8 |
+% Optional lyrics:
+% w: TEN TIMES FAST-ER! VIC-TOR-Y! YES!
+
+% ═══════════════════════════════════════════════════════════════
+% TEMPO PROGRESSION GUIDE:
+% Opening tempo: Match initial slowness
+% - Very slow (30+ sec) = ♩=50-60
+% - Slow (5-10 sec) = ♩=70-80
+% - Moderate slow (2-5 sec) = ♩=90-100
+%
+% Closing tempo: Match speedup
+% - 2x faster = double opening tempo
+% - 5x faster = 5x opening tempo (up to ♩=200 max)
+% - 10x+ faster = Presto ♩=180-200
+%
+% Example: 30 sec → 3 sec (10x faster)
+% Opening: ♩=60, Closing: ♩=180 (3x tempo = 10x speedup representation)
+% ═══════════════════════════════════════════════════════════════
