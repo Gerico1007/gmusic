@@ -21,7 +21,8 @@
 2. [Code Event Leitmotifs](#code-event-leitmotifs)
 3. [Emotional State Leitmotifs](#emotional-state-leitmotifs)
 4. [Project Concept Leitmotifs](#project-concept-leitmotifs)
-5. [Usage Guidelines](#usage-guidelines)
+5. [Composition Leitmotifs — Boucle de minuit](#composition-leitmotifs--boucle-de-minuit)
+6. [Usage Guidelines](#usage-guidelines)
 
 ---
 
@@ -572,6 +573,131 @@ V:1 "G"d6 | V:2 "G"b6 | V:3 "G"g6 | V:4 "G"d6 |
 
 ---
 
+## Composition Leitmotifs — Boucle de minuit
+
+**Added:** 2026-08-02, JamAI 🎸 session in the `jamai` atelier.
+
+Unlike every motif above, these did not come from encoding a coding session.
+**Jerry played them.** He dropped three MIDI files at 00:12 that turned out to be
+three layers of one four-bar loop, and by the end of the day it was an eight-bar
+piece. Two of the four motifs below are transcriptions of what he actually
+played; two are the answers written to them.
+
+They share one character: **the night loop that knows the way home and refuses to
+take it yet.**
+
+Source: `~/compositions-jamai/boucle-de-minuit-8.abc` ·
+listen: `gmusicassembly.com/jamai/melody/boucle-de-minuit-8-mesures.mp3`
+
+---
+
+### 🌙 The Midnight Pulse — Jerry's Accompaniment Signature
+
+**Played by Jerry, not written.** The most reusable thing to come out of the
+session: a complete accompaniment texture in one line.
+
+**Musical Character:**
+- **Rhythm**: eight eighths per bar, unbroken
+- **Shape**: **root on the beat, fifth on the offbeat**
+- **Dynamics**: strong downbeat, immediate drop to piano, crescendo to the barline
+- **Touch**: each note lasts about a full beat over a half-beat grid — the notes
+  overlap by half, which is what gives it its pad-like blur
+
+**Core Motif:**
+```abc
+L:1/8
+!f!C!p!G, !<(!CG, CG, C!<)!G,
+% velocities measured in his playing: 96, 55, 57, 66, 74, 77, 81, 81
+```
+
+**Transposition — it works on any degree:**
+```abc
+!f!A!p!E  !<(!AE AE A!<)!E      % vi   (A minor)
+!f!F!p!C  !<(!FC FC F!<)!C      % IV   (F major)
+!f!D!p!A, !<(!DA, DA, D!<)!A,   % ii   (D minor)
+!f!E!p!B, !<(!EB, EB, E!<)!B,   % iii  (E minor)
+```
+
+**When to Use:**
+- Any harmonic progression that needs motion without melody
+- Under a held chord or a sustained pad
+- Whenever a piece needs a heartbeat rather than a groove
+
+**Beware:** beaming in ABC is decided by the **spaces in the source text**. Write
+the pairs joined — `CG, CG,` — or every eighth engraves with its own flag.
+
+---
+
+### 🚪 The Open Hinge — refusing to conclude
+
+**Played by Jerry** at the end of his fourth bar, instinctively.
+
+In the sixth position of the Midnight Pulse, **the third replaces the expected
+fifth**, and the durations stretch. The pattern comes apart on the dominant, and
+the section is left standing open.
+
+```abc
+!f!G!p!D !<(!GD GB G!<)!D
+%              ^^ B instead of the expected D — the door stays open
+```
+
+**When to Use:**
+- End of a section that must not resolve
+- Over V when the piece is about to turn somewhere unexpected
+- Anywhere a loop should feel unfinished so it wants to come round again
+
+---
+
+### 🏠 The Closed Hinge — its answer
+
+**Written 2026-08-02** as the reply to the Open Hinge. Same substitution, opposite
+consequence: the last note lengthens from an eighth to a quarter and the hairpin
+inverts. **Diminuendo instead of crescendo.** The pulse stops.
+
+```abc
+!f!C!p!G, !>(!CG, CE !>)!C2
+%                  ^^ E instead of G, and the last note is a quarter — arrival
+```
+
+**When to Use:**
+- The final bar of a piece built on the Midnight Pulse
+- Whenever the Open Hinge was used earlier and must be answered
+- Any arrival that should settle rather than cadence hard
+
+The two hinges are a matched pair. Using one without the other leaves a question
+nobody answers.
+
+---
+
+### 🔀 The Cadence Refusal — delaying home
+
+A harmonic gesture rather than a melodic one, and Jerry's own instruction:
+*finishing on the tonic would be too easy.*
+
+**On a V that is calling for its I, put ii there instead.** The two chords share a
+common tone, so the cadence is diverted rather than broken — it turns instead of
+resolving. Then take the long way home through the key's minor chords.
+
+```
+bar  1    2    3    4  │  5    6    7    8
+     C    Am   F    G  │  Dm   Am   Em   C
+     I    vi   IV   V  │  ii   vi   iii  I
+                       │  ^^ the refusal        ^^ home, seven bars late
+```
+
+**Characteristics:**
+- Key: major
+- The expected tonic is withheld, not cancelled
+- All three diatonic minors (ii, iii, vi) are heard before the return
+- The deepest point is iii, immediately before home
+
+**When to Use:**
+- Extending a loop that has become too predictable
+- Any second half that must answer a first half rather than repeat it
+- When the obvious resolution would be correct and boring
+
+---
+
 ## Usage Guidelines
 
 ### How to Use These Leitmotifs
@@ -649,6 +775,10 @@ V:4 name="Synth" % Terminal pulse steady
 | **Collaboration** | Major | Moderato | mf-f | Four-voice polyphony |
 | **Jerry's Joy** | Major | Presto | fff | High register, rapid |
 | **Completion** | Major | Largo | pp-ppp | Descending calm |
+| 🌙 **Midnight Pulse** | any | Moderato | f→p→f | Root on beat, fifth off-beat |
+| 🚪 **Open Hinge** | on V | — | crescendo | Third replaces fifth, durations stretch |
+| 🏠 **Closed Hinge** | on I | — | diminuendo | Third replaces fifth, last note lengthens |
+| 🔀 **Cadence Refusal** | Major | — | — | V goes to ii, home delayed through the minors |
 
 ---
 
